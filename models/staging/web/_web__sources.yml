@@ -18,4 +18,9 @@ sources:
             tests:
               - accepted_values:
                   values: ['Apps & Games', 'Beauty', 'Books', 'Clothing, Shoes & Accessories', 'Movies & TV', 'Sports, Fitness & Outdoors', 'Kitchen'] 
+          - name: contact_id
+            tests:
+              - relationships:
+                  to: ref('contacts')
+                  field: id
 
