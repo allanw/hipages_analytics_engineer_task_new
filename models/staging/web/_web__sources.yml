@@ -4,8 +4,8 @@ sources:
   - name: web 
     config:
       enabled: true
-    database: dbt  
-    schema: public 
+    database: dbt
+    schema: public
     tables:
       - name: transactions
         description: Contains a record per transaction made by customers
@@ -17,4 +17,5 @@ sources:
           - name: category
             tests:
               - accepted_values:
-                  values: ['Apps & Games', 'Beauty', 'Books', 'Clothing, Shoes & Accessories', 'Movies & TV', 'Sports, Fitness & Outdoors'] 
+                  values: ['Apps & Games', 'Beauty', 'Books', 'Clothing, Shoes & Accessories', 'Movies & TV', 'Sports, Fitness & Outdoors', 'Kitchen'] 
+
