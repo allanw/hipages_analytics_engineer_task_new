@@ -21,5 +21,7 @@ teardown: ## Shuts down the docker container(s) and cleans up DBT artifacts
 
 .PHONY: models
 models: ## Builds DBT models and all the tests
+	dbt run-operation test_age_in_years
+	dbt run-operation test_as_timestamp_utc
 	dbt build 
 
