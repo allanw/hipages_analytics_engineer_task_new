@@ -8,4 +8,8 @@ models:
       - name: id
         tests:
           - not_null
-          - unique
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - id
+            - transaction_id

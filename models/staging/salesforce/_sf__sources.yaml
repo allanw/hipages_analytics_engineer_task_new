@@ -11,5 +11,9 @@ sources:
         columns:
           - name: id
             tests:
-              - unique
               - not_null
+        tests:
+          - dbt_utils.unique_combination_of_columns:
+              combination_of_columns:
+                - id
+                - mail
